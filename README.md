@@ -1,7 +1,9 @@
 RxMovies
 ========
 
-Async REST orchestration of a Video server using [Rx](http://rx.codeplex.com/).
+Demonstration of asynchronous REST orchestration of a Video server using [Rx](http://rx.codeplex.com/).
+
+Provides a comparison of non-async REST calls versus RX-orchestrated async calls, showing how latency kills performance.
 
 Written with C# v6 (Visual Studio 2015 Preview/November 2014).
 
