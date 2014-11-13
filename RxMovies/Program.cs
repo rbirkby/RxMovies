@@ -88,7 +88,7 @@ namespace RxMovies
             {
                 var client = new VideoClientTask(string.Format("http://{0}:1234/", Environment.MachineName));
 
-                foreach (var video in await client.Videos())
+                Parallel.ForEach(await client.Videos(), video =>
                 {
                     var bookmarkTask = client.Bookmark(video.VideoId);
                     var metadataTask = client.Metadata(video.VideoId);
@@ -111,7 +111,7 @@ namespace RxMovies
 
                     if (!isWarmup)
                         Console.WriteLine(item);
-                }
+                });
             }).Wait();
         }
     }

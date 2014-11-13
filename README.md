@@ -26,6 +26,9 @@ It's also a good idea to run [Fiddler](http://www.telerik.com/fiddler) to see th
 Latency is simulated inside each REST endpoint by a simple ```Thread.Sleep()```. 
 Alternatively, you could [simulate modem speeds](http://www.campusmvp.net/blog/simulating-a-slow-connection-with-fiddler) with Fiddler.
 
+In the RunTask implementation, the use of ```Parallel.ForEach()``` causes the lambda to be run on multiple threads. In a server-based environment, this 
+may cause unnecessary context switching or thread starvation. Due to Rx in the RunAsync implementation, all subscription callbacks are serialized.
+
 Notes
 -----
 
