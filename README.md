@@ -5,7 +5,7 @@ Demonstration of asynchronous REST orchestration of a Video server using [Rx](ht
 
 Provides a comparison of non-async REST calls versus RX-orchestrated async calls, showing how latency kills performance.
 
-Written with C# v6 (Visual Studio 2015 Preview/November 2014).
+Written with C# v6 (Visual Studio 2015 Preview/November 2014) in a microservice-style with the REST API running in [Nancy](http://nancyfx.org/), self-hosted on [Katana](https://katanaproject.codeplex.com/) via [Owin](http://owin.org/).
 
 Heavily inspired by the NetFlix [example](https://gist.github.com/benjchristensen/4679246).
 
