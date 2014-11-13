@@ -14,7 +14,12 @@ Usage
 
 On startup, both RxMovies and VideoService should be started (choose multiple startup projects in the solution's property pages).
 
-In RxMovies.Program, uncomment the ```RunSync()``` calls and comment out the ```RunAsync()``` calls to see the difference.
+There are 3 different implementations:
+* ```RunSync()``` - Synchronous HTTP requests
+* ```RunTask()``` - Asynchronous HTTP requests, orchestrated by async/await
+* ```RunAsync()``` - Asynchronous HTTP requests, orchestrated by Rx
+
+To change between implementations, simply comment/uncomment the appropriate calls in RxMovies.Program.
 
 It's also a good idea to run [Fiddler](http://www.telerik.com/fiddler) to see the difference between synchronous execution and asynchronous execution.
 

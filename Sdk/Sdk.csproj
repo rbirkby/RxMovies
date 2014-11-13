@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VideoClientTask.cs" />
     <Compile Include="VideoClientAsync.cs" />
     <Compile Include="VideoClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
