@@ -7,7 +7,7 @@ Provides a comparison of non-async REST calls versus RX-orchestrated async calls
 
 Written with C# v6 (Visual Studio 2015 Preview/November 2014) in a microservice-style with the REST API running in [Nancy](http://nancyfx.org/), self-hosted on [Katana](https://katanaproject.codeplex.com/) via [Owin](http://owin.org/).
 
-Heavily inspired by the NetFlix [example](https://gist.github.com/benjchristensen/4679246).
+Heavily inspired by the Netflix [example](https://gist.github.com/benjchristensen/4679246).
 
 Usage
 -----
