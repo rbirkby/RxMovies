@@ -7,6 +7,8 @@ Provides a comparison of non-async REST calls versus RX-orchestrated async calls
 
 Written with C# v6 (Visual Studio 2015 Preview/November 2014).
 
+Heavily inspired by the NetFlix [example](https://gist.github.com/benjchristensen/4679246).
+
 Usage
 -----
 
